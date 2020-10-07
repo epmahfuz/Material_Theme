@@ -1,0 +1,37 @@
+<div [class] = "theme">
+  <div class="theme-change">
+    <mat-card style="margin-bottom: 40px;">
+      <mat-form-field appearance="outline" style="width: 100%;">
+        <mat-label>Select Theme</mat-label>
+        <mat-select (selectionChange) = "changeTheme($event)" [(value)] = "theme">
+          <mat-option color="primary" value="light-theme">Light Theme</mat-option>
+          <mat-option color="warm" value="dark-theme">Dark Theme</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </mat-card>
+  </div>
+
+
+<br><br>
+
+<div>
+  <button mat-raised-button color="primary">Primary</button>
+  <button mat-raised-button color="warm">Warm</button>
+  <button mat-raised-button color="accent">Accent</button>
+</div>
+<br><br>
+
+<div class="test">
+  <button mat-raised-button>Primary</button>
+  <h2>Really ! Theming is working</h2>
+</div>
+</div>
+<br>
+<!-- <div fxLayout="column" fxLayoutGap="10px">
+  <div fxFlex="40%" class="left">
+    <p>the name </p>
+  </div>
+  <div fxFlex="40%" class="right">
+      <h2>it is wirking</h2>
+  </div>
+</div> -->

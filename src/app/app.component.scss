@@ -1,0 +1,16 @@
+@import '~@angular/material/theming';
+
+@mixin app-root($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warm: map-get($theme, warm);
+
+  .test{
+    button{
+      color:mat-color($primary);
+    }
+    h2{
+      color: mat-color($primary);
+    }
+  }
+}

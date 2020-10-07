@@ -1,0 +1,11 @@
+<div class="theme-change">
+  <mat-card style="margin-bottom: 40px;">
+    <mat-form-field appearance="outline" style="width: 100%;">
+      <mat-label>Select Theme</mat-label>
+      <mat-select (selectionChange) = "changeTheme($event)" [(value)] = "theme">
+        <mat-option color="primary" value="light-theme">Light Theme</mat-option>
+        <mat-option color="warm" value="dark-theme">Dark Theme</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </mat-card>
+</div>
